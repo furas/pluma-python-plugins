@@ -1,0 +1,9 @@
+[Plugin]
+Loader=python
+Module=example_minimal
+IAge=2
+Name=Example: Minimal
+Description=Minimal plugin based on minimal example in Gedit tutorial (https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Writing_the_plugin) and PythonConsole example code in Pluma source code on GitHub (https://github.com/mate-desktop/pluma/tree/master/plugins/pythonconsole/pythonconsole)
+Authors=Bartłomiej "furas" Burek <furas@tlen.pl>
+Copyright=Copyright© 2019 Bartłomiej "furas" Burek
+Website=https://github.com/furas/pluma-python-plugins

@@ -1,15 +1,19 @@
 
-_PythonConsole_ is Pluma plugin created in Python. It works with Pluma 1.20.
+### Existing plugins ###
 
-You can find it in Pluma source code:
+Pluma 1.20 uses different plugin code than older versions. It looks like plugin uses code similar to Gedit 3 plugin but not identical. Older Pluma used code similar to Gedit 2 plugin.
+So old plugins for Pluma don't work with new Pluma. The same plugins for Gedit2 don't work with new Pluma. Plugins for Gedit 3 also don't works with new Pluma.
+
+I found only one python plugin which works with Pluma 1.20.
+
+It is _PythonConsole_ in Pluma source code:
 
 [GitHub](https://github.com/) > [Mate-Desktop](https://github.com/mate-desktop/) > [Pluma](https://github.com/mate-desktop/pluma/) > [plugins](https://github.com/mate-desktop/pluma/tree/master/plugins/) > [PythonConsole](https://github.com/mate-desktop/pluma/tree/master/plugins/pythonconsole) (folder) > [PythonConsole](https://github.com/mate-desktop/pluma/tree/master/plugins/pythonconsole/pythonconsole) (module)
 
 
-### Minimal Example ###
+### Example: Minimal ###
 
-It is [minimal example](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Writing_the_plugin) from [Gedit Plugin Official Tutorial](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo) with changes based on `PythonConsole`
-
+It is "minimal example" from [Gedit Plugin Official Tutorial](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo) with changes based on `PythonConsole`
 
 **example.plugin**
 
@@ -18,7 +22,7 @@ It is [minimal example](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Writ
 | | [Plugin] |  [Plugin]
 | | Loader=python | Loader=python |
 | | Module=examplepy | Module=examplepy |
-| >> | IAge=2 | IAge=3 |
+| >> | IAge=*2* | IAge=*3* |
 | | Name=Example py | Name=Example py |
 | | Description=A Python plugin example | Description=A Python plugin example |
 | | Authors=Jesse van den Kieboom <jesse@icecrew.nl> | Authors=Jesse van den Kieboom <jesse@icecrew.nl> |
@@ -31,26 +35,26 @@ It is [minimal example](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Writ
 ```python
 # Pluma
 
-from gi.repository import GObject, Gtk, Pluma, Peas  # <-- Pluma
+from gi.repository import GObject, Gtk, Pluma, Peas
 
-class ExamplePyPlugin(GObject.Object, Peas.Activatable):  # <-- Pluma
+class ExamplePyPlugin(GObject.Object, Peas.Activatable):
     __gtype_name__ = "ExamplePyPlugin"
 
-    object = GObject.Property(type=GObject.Object)   # <-- Pluma: OK - but needs `self.window = self.object` in methods
+    object = GObject.Property(type=GObject.Object)   # <-- needs `self.window = self.object` in methods
 
     def __init__(self):
         GObject.Object.__init__(self)
 
     def do_activate(self):
-        self.window = self.object # <-- Pluma: OK
+        self.window = self.object
         pass
 
     def do_deactivate(self):
-        self.window = self.object # <-- Pluma: OK
+        self.window = self.object
         pass
 
     def do_update_state(self):
-        self.window = self.object # <-- Pluma: OK
+        self.window = self.object
         pass
 ```
 
@@ -86,3 +90,6 @@ class ExamplePyPlugin(GObject.Object, Peas.Activatable):  # <-- Pluma
         pass
 ```
 
+### Example: Add menu ###
+
+It is "example with menu" from [Gedit Plugin Official Tutorial](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo) with changes based on `PythonConsole`
