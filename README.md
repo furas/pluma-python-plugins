@@ -1,5 +1,5 @@
 
-### Existing plugins ###
+## Existing plugins
 
 Pluma 1.20 uses different code in plugins than older versions. It uses code similar to Gedit 3 plugins - but not identical. Older Pluma used code similar to Gedit 2 plugins.
 So new Pluma can't use python plugins for old Pluma, Gedit 2 nor Gedit 3. They need changes.
@@ -18,7 +18,7 @@ I found few working plugins in Pluma source code:
 
 
 
-### Plugin example: Minimal ###
+## Plugin example: Minimal
 
 It is based on ["Minimal plugin"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Minimal_plugin)
 in ["Python Plugin How To for Gedit 3"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Minimal_plugin)
@@ -137,7 +137,9 @@ class ExampleMinimalPlugin(GObject.Object, Peas.Activatable):          # <-- Plu
 
 The same code but with many `print()` for tests.
 
-### Plugin example: Add menu ###
+
+
+## Plugin example: Add menu
 
 It based on example ["Adding a menu item"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Adding_a_menu_item)
 in ["Python Plugin How To for Gedit 3"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo)
@@ -153,7 +155,9 @@ Changes are the same as in minimal example.
 
 The same code but with many `print()` for tests.
 
-### Plugin example: Advanced ###
+
+
+## Plugin example: Advanced
 
 It based on example ["Advanced plugin"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Implementing_an_advanced_plugin)
 in ["Python Plugin How To for Gedit 3"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo)
@@ -163,7 +167,9 @@ with changes based on [PythonConsole](https://github.com/mate-desktop/pluma/tree
 
 It is not complet. Gedit 3 uses classes `Gedit.WindowActivatable` and `Gedit.ViewActivatable` but Pluma has only `Peas.Activatable`
 
-### Plugin example: Configurable ###
+
+
+## Plugin example: Configurable
 
 It based on example ["Configurable plugin"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Adding_a_configure_dialog_for_your_plugin)
 in ["Python Plugin How To for Gedit 3"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo)
