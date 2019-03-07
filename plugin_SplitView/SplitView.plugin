@@ -1,0 +1,9 @@
+[Plugin]
+Loader=python
+Module=SplitView
+IAge=2
+Name=Split View
+Description=Create a split view.
+Authors=Mike Doty / maciejzgadzaj / Bartłomiej "furas" Burek
+Copyright=Copyright © 2019
+Website=https://github.com/furas/pluma-python-plugins
