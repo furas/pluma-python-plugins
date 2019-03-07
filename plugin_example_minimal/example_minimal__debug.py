@@ -9,8 +9,8 @@ gi.require_version('Peas', '1.0')
 from gi.repository import GObject, Gtk, Pluma, Peas  # <-- Pluma
 
 #class ExamplePyPlugin(GObject.Object, Gedit.WindowActivatable):  # <-- Gedit
-class ExamplePyPlugin(GObject.Object, Peas.Activatable):  # <-- Pluma
-    __gtype_name__ = "ExamplePyPlugin"
+class ExamplePyPlugin__Debug(GObject.Object, Peas.Activatable):  # <-- Pluma
+    __gtype_name__ = "ExamplePyPlugin__Debug"
 
     #window = GObject.property(type=Gedit.Window)  # <-- Gedit
     window = GObject.Property(type=GObject.Object)   # <-- Pluma: ERROR - doesn't works, `self.window` will be `None`

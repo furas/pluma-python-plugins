@@ -1,25 +1,20 @@
-#from gi.repository import GObject, Gtk, Gedit  # <-- Gedit
-from gi.repository import GObject, Gtk, Pluma, Peas  # <-- Pluma
 
-#class ExamplePyPlugin(GObject.Object, Gedit.WindowActivatable):  # <-- Gedit
-class ExamplePyPlugin(GObject.Object, Peas.Activatable):  # <-- Pluma
-    __gtype_name__ = "ExamplePyPlugin"
+from gi.repository import GObject, Gtk, Pluma, Peas
 
-    #window = GObject.property(type=Gedit.Window)    # <-- Gedit
-    #window = GObject.Property(type=GObject.Object)  # <-- Pluma: ERROR - doesn't works, `self.window` will be `None`
-    object = GObject.Property(type=GObject.Object)   # <-- Pluma: OK - but needs `self.window = self.object` in methods
+class ExampleMinimalPlugin(GObject.Object, Peas.Activatable):
+    __gtype_name__ = "ExampleMinimalPlugin"
+
+    object = GObject.Property(type=GObject.Object)  # it needs `self.window = self.object` in `do_activate()`
 
     def __init__(self):
         GObject.Object.__init__(self)
 
     def do_activate(self):
-        self.window = self.object # <-- Pluma: OK
+        self.window = self.object  # it needs it (or use `self.object` instead of `self.window` in your code`do_activate()`
         pass
 
     def do_deactivate(self):
-        self.window = self.object # <-- Pluma: OK
         pass
 
     def do_update_state(self):
-        self.window = self.object # <-- Pluma: OK
         pass
