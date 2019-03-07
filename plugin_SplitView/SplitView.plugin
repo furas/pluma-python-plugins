@@ -4,6 +4,6 @@ Module=SplitView
 IAge=2
 Name=Split View
 Description=Create a split view.
-Authors=Mike Doty / maciejzgadzaj / Bartłomiej "furas" Burek
+Authors=Mike Doty (version for Gedit 2)\nMaciej Zgadzaj (port to old Pluma)\nBartłomiej "furas" Burek (update to new Pluma)
 Copyright=Copyright © 2019
 Website=https://github.com/furas/pluma-python-plugins
