@@ -160,3 +160,13 @@ with changes based on [PythonConsole](https://github.com/mate-desktop/pluma/tree
 
 It is not complet. Gedit 3 uses classes `Gedit.WindowActivatable` and `Gedit.ViewActivatable` but Pluma has only `Peas.Activatable`
 
+### Plugin example: Configurable ###
+
+It based on example ["Configurable plugin"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo#Adding_a_configure_dialog_for_your_plugin)
+in ["Python Plugin How To for Gedit 3"](https://wiki.gnome.org/Apps/Gedit/PythonPluginHowTo)
+with changes based on [PythonConsole](https://github.com/mate-desktop/pluma/tree/master/plugins/pythonconsole) for Pluma
+
+**example_configurable.plugin / example_configurable.py**
+
+It adds module PeakGtk and method `do_create_configure_widget` to create dialog window. Plugin will use `run()` to execute it.
+

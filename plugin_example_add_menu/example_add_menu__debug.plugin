@@ -5,5 +5,5 @@ IAge=2
 Name=Example: Add Menu (debug)
 Description=Example Plugin which adds menu "Tools" with function "Clear document"
 Authors=Bartłomiej "furas" Burek <furas@tlen.pl>
-Copyright=Copyright© 2019 Bartłomiej "furas" Burek
+Copyright=Copyright © 2019 Bartłomiej "furas" Burek
 Website=https://github.com/furas/pluma-python-plugins

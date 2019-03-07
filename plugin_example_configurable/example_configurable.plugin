@@ -1,9 +1,9 @@
 [Plugin]
 Loader=python
-Module=example_add_menu
+Module=example_configurable
 IAge=2
-Name=Example: Add Menu
-Description=Example Plugin which adds menu "Tools" with function "Clear document"
+Name=Example: Configurable
+Description=Example plugin based on example for Gedit 3
 Authors=Bartłomiej "furas" Burek <furas@tlen.pl>
 Copyright=Copyright © 2019 Bartłomiej "furas" Burek
 Website=https://github.com/furas/pluma-python-plugins
