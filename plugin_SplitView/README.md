@@ -1,3 +1,5 @@
+SplitView for Pluma 1.20+
+
 Based on
 
 - Mike Doty's Gedit 2 plugin - http://www.psyguygames.com/SplitView2.tar.gz

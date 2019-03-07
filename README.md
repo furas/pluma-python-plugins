@@ -8,10 +8,13 @@ I found few working plugins in Pluma source code:
 
 [GitHub](https://github.com/) > [Mate-Desktop](https://github.com/mate-desktop/) > [Pluma](https://github.com/mate-desktop/pluma/) > [plugins](https://github.com/mate-desktop/pluma/tree/master/plugins/)
 
-> [ExternalTools](https://github.com/mate-desktop/pluma/tree/master/plugins/externaltools)
-> [QuickOpen](https://github.com/mate-desktop/pluma/tree/master/plugins/quickopen)
-> [PythonConsole](https://github.com/mate-desktop/pluma/tree/master/plugins/pythonconsole)
-> [Snippets](https://github.com/mate-desktop/pluma/tree/master/plugins/snippets)
+- [ExternalTools](https://github.com/mate-desktop/pluma/tree/master/plugins/externaltools)
+
+- [QuickOpen](https://github.com/mate-desktop/pluma/tree/master/plugins/quickopen)
+
+- [PythonConsole](https://github.com/mate-desktop/pluma/tree/master/plugins/pythonconsole)
+
+- [Snippets](https://github.com/mate-desktop/pluma/tree/master/plugins/snippets)
 
 
 
