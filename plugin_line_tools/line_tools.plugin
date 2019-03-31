@@ -1,6 +1,6 @@
 [Plugin]
 Loader=python
-Module=LineTools
+Module=line_tools
 IAge=2
 Name=Line Tools
 Description=Advanced line editing functions such as line duplication.
