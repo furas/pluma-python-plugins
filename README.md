@@ -179,3 +179,9 @@ with changes based on [PythonConsole](https://github.com/mate-desktop/pluma/tree
 
 It adds module PeakGtk and method `do_create_configure_widget` to create dialog window. Plugin will use `run()` to execute it.
 
+---
+
+### Similar
+
+- [fszymanski/pluma-plugins](https://github.com/fszymanski/pluma-plugins)
+
