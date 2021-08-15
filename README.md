@@ -1,3 +1,4 @@
+WARNING: It may not work with Pluma 1.25+ which uses Python3 instead of Python2.
 
 ## Existing plugins
 
@@ -183,5 +184,5 @@ It adds module PeakGtk and method `do_create_configure_widget` to create dialog 
 
 ### Similar
 
-- [fszymanski/pluma-plugins](https://github.com/fszymanski/pluma-plugins)
+- [fszymanski/pluma-plugins](https://github.com/fszymanski/pluma-plugins) (need Pluma 1.25+ because it uses Python3)
 
